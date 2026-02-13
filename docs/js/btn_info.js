@@ -1,3 +1,3 @@
 function btn_i() {
-    window.location.href = "info.html";
+    window.location.href = "Info.html";
 }
