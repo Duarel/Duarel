@@ -4,6 +4,24 @@
     100% {background-position: 0 50%;}
 }
 
+@keyframes glow-r {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 100%; /* Уходим вниз */
+    }
+    50% {
+        background-position: 100% 50%; /* В правый бок */
+    }
+    75% {
+        background-position: 50% 0%; /* Наверх */
+    }
+    100% {
+        background-position: 0% 50%; /* Возврат в начало */
+    }
+}
+
 
 
 .SS {
@@ -115,4 +133,36 @@
 .ul-d {
     margin-top: -25px;
     margin-left: -12px;
+}
+
+.att-s {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(248, 102, 218, 1) 28%, rgba(87, 0, 209, 1) 59%, rgba(45, 97, 210, 1) 75%, rgba(0, 200, 255, 1) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: glow 5s linear infinite;
+}
+
+.btn-r {
+    background: linear-gradient(135deg, #00f2ff, #0072ff, #7000ff, #ff00c8, #00f2ff);
+    width: 165px;
+    height: 55px;
+    box-shadow: 0 0 10px rgb(0, 34, 255);
+    background-size: 400% 400%;
+    animation: glow-r 6s ease infinite;
+    border-radius: 7px;
+    transition: all 0.3s;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+
+.btn-r:hover {
+    box-shadow: 0 0 25px rgb(0, 34, 255);
+}
+
+.btn-r:active {
+    scale: 1.05;
+    filter: brightness(0.9);
+    box-shadow: 0 0 35px rgb(0, 34, 255);
 }
