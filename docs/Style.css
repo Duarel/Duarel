@@ -301,3 +301,20 @@ body {
     animation: glow-r 6s ease infinite;
     font-size: 55px;
 }
+
+.buttonp {
+    width: 140px;
+    height: 40px;
+    border-radius: 10%;
+    background: red;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    background: linear-gradient(90deg, rgba(247, 255, 0, 1) 0%, rgba(255, 94, 0, 1) 35%, rgba(255, 0, 0, 1) 65%, rgba(255, 0, 255, 1) 100%);
+    background-size: 300% 100%;
+    background-position: 100% 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: auto;
+}
